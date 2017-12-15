@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="fFT-7m-37o" kind="relationship" relationship="rootViewController" id="gSc-u5-Qdt"/>
+                        <segue destination="2fw-Fu-jLu" kind="relationship" relationship="rootViewController" id="BEO-lM-1LO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z59-AR-Xwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -27,20 +26,33 @@
             <point key="canvasLocation" x="-652" y="88"/>
         </scene>
         <!--首页-->
-        <scene sceneID="9Zt-uv-2qn">
+        <scene sceneID="5F6-qU-Fth">
             <objects>
-                <viewController id="fFT-7m-37o" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZIt-Uq-jrI">
+                <tableViewController id="2fw-Fu-jLu" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ycQ-vv-a37">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2JU-Wf-4kA"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="首页" id="IB5-Dj-0aQ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EfZ-6n-UEK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Wsb-7b-cOy">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wsb-7b-cOy" id="V1i-o6-aUQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2fw-Fu-jLu" id="Vn1-8g-rXe"/>
+                            <outlet property="delegate" destination="2fw-Fu-jLu" id="ZtY-wt-mMN"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="首页" id="wfS-tL-TQf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zw-9s-6dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="88"/>
+            <point key="canvasLocation" x="31" y="88"/>
         </scene>
     </scenes>
 </document>

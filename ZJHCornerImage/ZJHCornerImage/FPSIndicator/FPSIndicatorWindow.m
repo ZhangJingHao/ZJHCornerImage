@@ -19,8 +19,8 @@
 + (FPSIndicatorWindow *)getWindow {
     CGSize size = [[UIScreen mainScreen] bounds].size;
     
-    CGFloat w = 55;
-    CGFloat h = 20;
+    CGFloat w = 75;
+    CGFloat h = 30;
     CGFloat x = 15;
     CGFloat y = size.height - h - 80;
     CGRect frame = CGRectMake(x, y, w, h);
@@ -59,8 +59,8 @@
     
     [text addAttribute:NSForegroundColorAttributeName value: [UIColor whiteColor] range:NSMakeRange(text.length - 3, 3)];
     
-    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:14] range:NSMakeRange(0, text.length)];
-    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:4] range:NSMakeRange(text.length - 4, 1)];
+    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:16] range:NSMakeRange(0, text.length)];
+    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:6] range:NSMakeRange(text.length - 4, 1)];
     
     _fpsLabel.attributedText = text;
 }

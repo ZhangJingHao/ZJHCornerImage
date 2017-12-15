@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7F4B4D1FE3710500C6482C /* UIImageView+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B4B1FE3710500C6482C /* UIImageView+Circle.m */; };
+		2A7F4B501FE371F600C6482C /* CustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B4F1FE371F600C6482C /* CustomViewController.m */; };
+		2A7F4B531FE3751D00C6482C /* CornerRadiusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B521FE3751D00C6482C /* CornerRadiusCell.m */; };
+		2A7F4B561FE3753700C6482C /* CoreGraphicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B551FE3753700C6482C /* CoreGraphicsCell.m */; };
+		2A7F4B591FE3756700C6482C /* ShapeLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B581FE3756700C6482C /* ShapeLayerCell.m */; };
+		2A7F4B5C1FE3757F00C6482C /* CoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B5B1FE3757F00C6482C /* CoverViewCell.m */; };
+		2A7F4B5F1FE3759A00C6482C /* SDGraphicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F4B5E1FE3759A00C6482C /* SDGraphicsCell.m */; };
 		2A93760A1FD665AD00A8DCB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9376091FD665AD00A8DCB3 /* AppDelegate.m */; };
 		2A93760D1FD665AD00A8DCB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A93760C1FD665AD00A8DCB3 /* ViewController.m */; };
 		2A9376101FD665AD00A8DCB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A93760E1FD665AD00A8DCB3 /* Main.storyboard */; };
@@ -21,6 +28,20 @@
 
 /* Begin PBXFileReference section */
 		04E4555274BE35C0CA1A6323 /* libPods-ZJHCornerImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZJHCornerImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A7F4B4B1FE3710500C6482C /* UIImageView+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Circle.m"; sourceTree = "<group>"; };
+		2A7F4B4C1FE3710500C6482C /* UIImageView+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Circle.h"; sourceTree = "<group>"; };
+		2A7F4B4E1FE371F600C6482C /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		2A7F4B4F1FE371F600C6482C /* CustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewController.m; sourceTree = "<group>"; };
+		2A7F4B511FE3751D00C6482C /* CornerRadiusCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CornerRadiusCell.h; sourceTree = "<group>"; };
+		2A7F4B521FE3751D00C6482C /* CornerRadiusCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CornerRadiusCell.m; sourceTree = "<group>"; };
+		2A7F4B541FE3753700C6482C /* CoreGraphicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreGraphicsCell.h; sourceTree = "<group>"; };
+		2A7F4B551FE3753700C6482C /* CoreGraphicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreGraphicsCell.m; sourceTree = "<group>"; };
+		2A7F4B571FE3756700C6482C /* ShapeLayerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeLayerCell.h; sourceTree = "<group>"; };
+		2A7F4B581FE3756700C6482C /* ShapeLayerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeLayerCell.m; sourceTree = "<group>"; };
+		2A7F4B5A1FE3757F00C6482C /* CoverViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverViewCell.h; sourceTree = "<group>"; };
+		2A7F4B5B1FE3757F00C6482C /* CoverViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverViewCell.m; sourceTree = "<group>"; };
+		2A7F4B5D1FE3759A00C6482C /* SDGraphicsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDGraphicsCell.h; sourceTree = "<group>"; };
+		2A7F4B5E1FE3759A00C6482C /* SDGraphicsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDGraphicsCell.m; sourceTree = "<group>"; };
 		2A9376051FD665AD00A8DCB3 /* ZJHCornerImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJHCornerImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9376081FD665AD00A8DCB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A9376091FD665AD00A8DCB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +74,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7F4B4A1FE3710500C6482C /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F4B4C1FE3710500C6482C /* UIImageView+Circle.h */,
+				2A7F4B4B1FE3710500C6482C /* UIImageView+Circle.m */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		2A7F4B601FE3759E00C6482C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F4B511FE3751D00C6482C /* CornerRadiusCell.h */,
+				2A7F4B521FE3751D00C6482C /* CornerRadiusCell.m */,
+				2A7F4B541FE3753700C6482C /* CoreGraphicsCell.h */,
+				2A7F4B551FE3753700C6482C /* CoreGraphicsCell.m */,
+				2A7F4B571FE3756700C6482C /* ShapeLayerCell.h */,
+				2A7F4B581FE3756700C6482C /* ShapeLayerCell.m */,
+				2A7F4B5A1FE3757F00C6482C /* CoverViewCell.h */,
+				2A7F4B5B1FE3757F00C6482C /* CoverViewCell.m */,
+				2A7F4B5D1FE3759A00C6482C /* SDGraphicsCell.h */,
+				2A7F4B5E1FE3759A00C6482C /* SDGraphicsCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2A9375FC1FD665AD00A8DCB3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,12 +122,16 @@
 			isa = PBXGroup;
 			children = (
 				2AA4D21C1FDFD22A005A8E22 /* FPSIndicator */,
+				2A7F4B4A1FE3710500C6482C /* Categroy */,
 				2A9376081FD665AD00A8DCB3 /* AppDelegate.h */,
 				2A9376091FD665AD00A8DCB3 /* AppDelegate.m */,
 				2A93760B1FD665AD00A8DCB3 /* ViewController.h */,
 				2A93760C1FD665AD00A8DCB3 /* ViewController.m */,
+				2A7F4B4E1FE371F600C6482C /* CustomViewController.h */,
+				2A7F4B4F1FE371F600C6482C /* CustomViewController.m */,
 				2A96D5E51FD9229900B9A61F /* CustomCell.h */,
 				2A96D5E61FD9229900B9A61F /* CustomCell.m */,
+				2A7F4B601FE3759E00C6482C /* Cell */,
 				2A93760E1FD665AD00A8DCB3 /* Main.storyboard */,
 				2A9376111FD665AD00A8DCB3 /* Assets.xcassets */,
 				2A9376131FD665AE00A8DCB3 /* LaunchScreen.storyboard */,
@@ -246,12 +297,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7F4B4D1FE3710500C6482C /* UIImageView+Circle.m in Sources */,
 				2AA4D2251FDFDABD005A8E22 /* FPSIndicatorWindow.m in Sources */,
 				2A93760D1FD665AD00A8DCB3 /* ViewController.m in Sources */,
+				2A7F4B531FE3751D00C6482C /* CornerRadiusCell.m in Sources */,
+				2A7F4B501FE371F600C6482C /* CustomViewController.m in Sources */,
 				2AA4D21F1FDFD259005A8E22 /* FPSIndicatorMgr.m in Sources */,
 				2A9376181FD665AE00A8DCB3 /* main.m in Sources */,
+				2A7F4B5F1FE3759A00C6482C /* SDGraphicsCell.m in Sources */,
 				2A96D5E71FD9229900B9A61F /* CustomCell.m in Sources */,
+				2A7F4B5C1FE3757F00C6482C /* CoverViewCell.m in Sources */,
 				2A93760A1FD665AD00A8DCB3 /* AppDelegate.m in Sources */,
+				2A7F4B591FE3756700C6482C /* ShapeLayerCell.m in Sources */,
+				2A7F4B561FE3753700C6482C /* CoreGraphicsCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
