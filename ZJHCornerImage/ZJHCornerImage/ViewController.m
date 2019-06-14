@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CustomViewController.h"
+#import "FPSIndicatorMgr.h"
 
 @interface ViewController ()
 
@@ -32,6 +33,8 @@
                           @"ShapeLayerCell",
                           @"CoverViewCell",
                           @"SDGraphicsCell" ];
+    
+    [[FPSIndicatorMgr sharedFPSIndicator] show];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

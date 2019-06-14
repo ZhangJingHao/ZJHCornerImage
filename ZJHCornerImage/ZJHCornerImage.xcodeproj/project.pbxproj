@@ -22,8 +22,8 @@
 		2A9376181FD665AE00A8DCB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9376171FD665AE00A8DCB3 /* main.m */; };
 		2A96D5E71FD9229900B9A61F /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A96D5E61FD9229900B9A61F /* CustomCell.m */; };
 		2AA4D21F1FDFD259005A8E22 /* FPSIndicatorMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4D21E1FDFD259005A8E22 /* FPSIndicatorMgr.m */; };
-		2AA4D2251FDFDABD005A8E22 /* FPSIndicatorWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4D2241FDFDABD005A8E22 /* FPSIndicatorWindow.m */; };
 		99C0C832F9FE914A75DC0A0D /* libPods-ZJHCornerImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E4555274BE35C0CA1A6323 /* libPods-ZJHCornerImage.a */; };
+		FA3C4D0322B332DA0050D0B5 /* FPSIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3C4D0222B332DA0050D0B5 /* FPSIndicatorView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,10 +56,10 @@
 		2A96D5E61FD9229900B9A61F /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		2AA4D21D1FDFD259005A8E22 /* FPSIndicatorMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSIndicatorMgr.h; sourceTree = "<group>"; };
 		2AA4D21E1FDFD259005A8E22 /* FPSIndicatorMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSIndicatorMgr.m; sourceTree = "<group>"; };
-		2AA4D2231FDFDABD005A8E22 /* FPSIndicatorWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSIndicatorWindow.h; sourceTree = "<group>"; };
-		2AA4D2241FDFDABD005A8E22 /* FPSIndicatorWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSIndicatorWindow.m; sourceTree = "<group>"; };
 		8CDE22D6D30B881FAFE0CB45 /* Pods-ZJHCornerImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJHCornerImage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZJHCornerImage/Pods-ZJHCornerImage.release.xcconfig"; sourceTree = "<group>"; };
 		E85BC822C904689D65A6A213 /* Pods-ZJHCornerImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZJHCornerImage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZJHCornerImage/Pods-ZJHCornerImage.debug.xcconfig"; sourceTree = "<group>"; };
+		FA3C4D0122B332DA0050D0B5 /* FPSIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FPSIndicatorView.h; sourceTree = "<group>"; };
+		FA3C4D0222B332DA0050D0B5 /* FPSIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FPSIndicatorView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +146,8 @@
 			children = (
 				2AA4D21D1FDFD259005A8E22 /* FPSIndicatorMgr.h */,
 				2AA4D21E1FDFD259005A8E22 /* FPSIndicatorMgr.m */,
-				2AA4D2231FDFDABD005A8E22 /* FPSIndicatorWindow.h */,
-				2AA4D2241FDFDABD005A8E22 /* FPSIndicatorWindow.m */,
+				FA3C4D0122B332DA0050D0B5 /* FPSIndicatorView.h */,
+				FA3C4D0222B332DA0050D0B5 /* FPSIndicatorView.m */,
 			);
 			path = FPSIndicator;
 			sourceTree = "<group>";
@@ -297,8 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C4D0322B332DA0050D0B5 /* FPSIndicatorView.m in Sources */,
 				2A7F4B4D1FE3710500C6482C /* UIImageView+Circle.m in Sources */,
-				2AA4D2251FDFDABD005A8E22 /* FPSIndicatorWindow.m in Sources */,
 				2A93760D1FD665AD00A8DCB3 /* ViewController.m in Sources */,
 				2A7F4B531FE3751D00C6482C /* CornerRadiusCell.m in Sources */,
 				2A7F4B501FE371F600C6482C /* CustomViewController.m in Sources */,

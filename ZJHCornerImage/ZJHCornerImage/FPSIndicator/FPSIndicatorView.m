@@ -1,30 +1,30 @@
 //
-//  FPSIndicatorWindow.m
+//  FPSIndicatorView.m
 //  ZJHCornerImage
 //
-//  Created by ZhangJingHao2345 on 2017/12/12.
-//  Copyright © 2017年 ZhangJingHao2345. All rights reserved.
+//  Created by ZhangJingHao48 on 2019/6/14.
+//  Copyright © 2019 ZhangJingHao2345. All rights reserved.
 //
 
-#import "FPSIndicatorWindow.h"
+#import "FPSIndicatorView.h"
 
-@interface FPSIndicatorWindow ()
+@interface FPSIndicatorView ()
 
 @property (nonatomic, strong) UILabel *fpsLabel;
 
 @end
 
-@implementation FPSIndicatorWindow
+@implementation FPSIndicatorView
 
-+ (FPSIndicatorWindow *)getWindow {
++ (FPSIndicatorView *)getIndicatorView {
     CGSize size = [[UIScreen mainScreen] bounds].size;
     
-    CGFloat w = 75;
-    CGFloat h = 30;
-    CGFloat x = 15;
-    CGFloat y = size.height - h - 80;
+    CGFloat w = 110;
+    CGFloat h = 50;
+    CGFloat x = 20;
+    CGFloat y = size.height - h - 100;
     CGRect frame = CGRectMake(x, y, w, h);
-    FPSIndicatorWindow *window = [[FPSIndicatorWindow alloc] initWithFrame:frame];
+    FPSIndicatorView *window = [[FPSIndicatorView alloc] initWithFrame:frame];
     return window;
 }
 
@@ -37,9 +37,6 @@
 }
 
 - (void)setupUI {
-    self.windowLevel = UIWindowLevelStatusBar + 100.0;
-    self.rootViewController = [UIViewController new];
-    
     _fpsLabel = [[UILabel alloc] initWithFrame:self.bounds];
     _fpsLabel.layer.cornerRadius = 5;
     _fpsLabel.clipsToBounds = YES;
@@ -59,7 +56,7 @@
     
     [text addAttribute:NSForegroundColorAttributeName value: [UIColor whiteColor] range:NSMakeRange(text.length - 3, 3)];
     
-    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:16] range:NSMakeRange(0, text.length)];
+    [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:23] range:NSMakeRange(0, text.length)];
     [text addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Courier" size:6] range:NSMakeRange(text.length - 4, 1)];
     
     _fpsLabel.attributedText = text;

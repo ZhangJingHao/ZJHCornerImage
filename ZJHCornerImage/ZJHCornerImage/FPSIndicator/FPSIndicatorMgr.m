@@ -7,7 +7,7 @@
 //
 
 #import "FPSIndicatorMgr.h"
-#import "FPSIndicatorWindow.h"
+#import "FPSIndicatorView.h"
 
 @interface FPSIndicatorMgr() {
     CADisplayLink *_displayLink;
@@ -15,7 +15,7 @@
     NSUInteger _count;
 }
 
-@property (nonatomic, strong) FPSIndicatorWindow *fpsWindow;
+@property (nonatomic, strong) FPSIndicatorView *fpsView;
 
 @end
 
@@ -39,9 +39,10 @@
 }
 
 // 创建CADisplayLink
-- (void)initConfig {    
+- (void)initConfig {
+    
     // create fpsWindow
-    _fpsWindow = [FPSIndicatorWindow getWindow];
+    _fpsView = [FPSIndicatorView getIndicatorView];
     
     // 创建CADisplayLink，并添加到当前run loop的NSRunLoopCommonModes
     _displayLink = [CADisplayLink displayLinkWithTarget:self
@@ -68,15 +69,16 @@
     _count = 0;
     
     // 更新fps
-    [_fpsWindow updateFps:fps];
+    [_fpsView updateFps:fps];
 }
 
 - (void)show {
-    self.fpsWindow.hidden = NO;
+    UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
+    [keyWindow addSubview:_fpsView];
 }
 
 - (void)hide {
-    self.fpsWindow.hidden = YES;
+    [_fpsView removeFromSuperview];
 }
 
 @end

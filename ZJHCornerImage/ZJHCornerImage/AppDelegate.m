@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "FPSIndicatorMgr.h"
+
 
 @interface AppDelegate ()
 
@@ -18,7 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [[FPSIndicatorMgr sharedFPSIndicator] show];
     
     return YES;
 }
